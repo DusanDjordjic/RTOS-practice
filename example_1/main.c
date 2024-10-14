@@ -80,6 +80,7 @@ int main() {
     pthread_join(thread, NULL);
     sem_destroy(&semaphore);
     sem_destroy(&done);
+    sem_destroy(&read);
 
     return 0;
 }
